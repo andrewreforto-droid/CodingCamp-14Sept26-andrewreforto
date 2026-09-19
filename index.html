@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Expense & Budget Visualizer - a mobile-friendly expense tracker built with HTML, CSS, Vanilla JavaScript, Local Storage, and Chart.js."
+  />
+  <title>Expense &amp; Budget Visualizer</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="error-banner" class="error-banner hidden" role="alert" aria-live="assertive">
+    <span id="error-banner-message"></span>
+    <button id="error-banner-dismiss" class="icon-button" type="button" aria-label="Dismiss message">×</button>
+  </div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Coding Camp Final Project</p>
+        <h1>Expense &amp; Budget Visualizer</h1>
+        <p class="subtitle">Track daily expenses and understand where your money goes.</p>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme">
+        <span id="theme-icon" aria-hidden="true">☾</span>
+        <span id="theme-label">Dark mode</span>
+      </button>
+    </header>
+
+    <section class="overview-grid" aria-label="Expense overview">
+      <article class="summary-card summary-card--primary">
+        <p class="summary-card__label">Total Spending</p>
+        <p id="balance-display" class="summary-card__value">Rp0</p>
+        <p class="summary-card__hint">All recorded expenses</p>
+      </article>
+
+      <article class="summary-card">
+        <p class="summary-card__label">This Month</p>
+        <p id="current-month-total" class="summary-card__value summary-card__value--small">Rp0</p>
+        <p id="current-month-label" class="summary-card__hint">Current month</p>
+      </article>
+
+      <article class="summary-card">
+        <p class="summary-card__label">Transactions</p>
+        <p id="transaction-count" class="summary-card__value summary-card__value--small">0</p>
+        <p class="summary-card__hint">Saved in this browser</p>
+      </article>
+    </section>
+
+    <section class="workspace-grid">
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">New expense</p>
+            <h2>Add Transaction</h2>
+          </div>
+        </div>
+
+        <form id="transaction-form" class="transaction-form" novalidate>
+          <div class="form-group">
+            <label for="input-name">Item Name</label>
+            <input
+              id="input-name"
+              type="text"
+              maxlength="100"
+              placeholder="e.g. Lunch"
+              autocomplete="off"
+              aria-describedby="error-name"
+            />
+            <span id="error-name" class="field-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="input-amount">Amount</label>
+            <div class="amount-field">
+              <span class="amount-prefix">Rp</span>
+              <input
+                id="input-amount"
+                type="number"
+                min="1"
+                step="1"
+                inputmode="numeric"
+                placeholder="25000"
+                aria-describedby="error-amount"
+              />
+            </div>
+            <span id="error-amount" class="field-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row">
+              <label for="input-category">Category</label>
+              <button id="show-category-form" class="text-button" type="button">+ Custom category</button>
+            </div>
+
+            <select id="input-category" aria-describedby="error-category">
+              <option value="">Choose category</option>
+            </select>
+            <span id="error-category" class="field-error" role="alert"></span>
+          </div>
+
+          <div id="custom-category-box" class="custom-category-box hidden">
+            <label for="custom-category-input">New category name</label>
+            <div class="inline-field">
+              <input
+                id="custom-category-input"
+                type="text"
+                maxlength="30"
+                placeholder="e.g. Shopping"
+                autocomplete="off"
+              />
+              <button id="add-category-button" class="secondary-button" type="button">Add</button>
+            </div>
+            <span id="custom-category-error" class="field-error" role="alert"></span>
+          </div>
+
+          <button class="primary-button" type="submit">Add Transaction</button>
+        </form>
+      </article>
+
+      <article class="panel monthly-panel">
+        <div class="section-heading section-heading--responsive">
+          <div>
+            <p class="section-kicker">Optional feature</p>
+            <h2>Monthly Summary</h2>
+          </div>
+
+          <label class="month-picker">
+            <span>Month</span>
+            <input id="month-filter" type="month" />
+          </label>
+        </div>
+
+        <div class="monthly-stats">
+          <div class="mini-stat">
+            <span>Spending</span>
+            <strong id="month-summary-total">Rp0</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Transactions</span>
+            <strong id="month-summary-count">0</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Top Category</span>
+            <strong id="month-summary-category">—</strong>
+          </div>
+        </div>
+
+        <p id="month-summary-empty" class="helper-text">
+          Add a transaction to see your monthly summary.
+        </p>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">History</p>
+            <h2>Transactions</h2>
+          </div>
+          <span id="list-count-badge" class="count-badge">0 items</span>
+        </div>
+
+        <ul id="transaction-list" class="transaction-list" aria-label="Expense transactions"></ul>
+      </article>
+
+      <article class="panel">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Overview</p>
+            <h2>Spending by Category</h2>
+          </div>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas
+            id="spending-chart"
+            aria-label="Pie chart of spending by category"
+            role="img"
+          ></canvas>
+          <div id="chart-empty-state" class="chart-empty-state hidden">
+            <div class="empty-icon" aria-hidden="true">◔</div>
+            <p>No spending data yet.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer-note">
+      <p>Data is stored locally in your browser using Local Storage.</p>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

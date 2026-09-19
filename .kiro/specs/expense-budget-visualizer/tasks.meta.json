@@ -1,0 +1,274 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2.1 Implement `Validator` inside the IIFE": [
+      {
+        "executionId": "2371a0a0-8e31-4cd5-82c4-b64120d13c2d",
+        "chatSessionId": "sess_d5a454fa-4134-4564-9941-4b8111ea60e0",
+        "timestamp": 1789749413379
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782153796
+      }
+    ],
+    "5.2 Implement `Renderer.renderBalance(total)`": [
+      {
+        "executionId": "441778a8-bb53-4415-8a54-0b16ed6a42a4",
+        "chatSessionId": "sess_ae6862eb-e132-41b3-9bb2-548e206fc4d4",
+        "timestamp": 1789780970416
+      },
+      {
+        "executionId": "441778a8-bb53-4415-8a54-0b16ed6a42a4",
+        "chatSessionId": "sess_ae6862eb-e132-41b3-9bb2-548e206fc4d4",
+        "timestamp": 1789781615618
+      }
+    ],
+    "5.3 Implement `Renderer.renderChart(categoryTotals)`": [
+      {
+        "executionId": "572eff40-81ec-4ac6-a848-83d8e16c365e",
+        "chatSessionId": "sess_e38003d5-1300-4858-9b49-11650f8e19df",
+        "timestamp": 1789781628965
+      },
+      {
+        "executionId": "572eff40-81ec-4ac6-a848-83d8e16c365e",
+        "chatSessionId": "sess_e38003d5-1300-4858-9b49-11650f8e19df",
+        "timestamp": 1789781689141
+      }
+    ],
+    "5.4 Implement form feedback and error banner helpers": [
+      {
+        "executionId": "17543242-00da-4a1c-b400-6b5bf32a5a70",
+        "chatSessionId": "sess_9911933f-add2-4563-88e1-883e9a791da2",
+        "timestamp": 1789781719139
+      },
+      {
+        "executionId": "17543242-00da-4a1c-b400-6b5bf32a5a70",
+        "chatSessionId": "sess_9911933f-add2-4563-88e1-883e9a791da2",
+        "timestamp": 1789781787988
+      }
+    ],
+    "6.1 Implement `EventHandlers.onFormSubmit(event)`": [
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789781832202
+      },
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789781991486
+      }
+    ],
+    "6.2 Implement `EventHandlers.onDeleteClick(event)` with event delegation": [
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789781836137
+      },
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789781995599
+      }
+    ],
+    "6.3 Implement `EventHandlers.onDOMContentLoaded()` and bootstrap": [
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789781840568
+      },
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789782000104
+      }
+    ],
+    "6. Implement EventHandlers and wire everything together": [
+      {
+        "executionId": "b8965834-ff23-47e2-ab11-f3ea9348c5df",
+        "chatSessionId": "sess_3e50c30f-299a-49da-bf27-6a115450fc54",
+        "timestamp": 1789782000238
+      }
+    ],
+    "3.1 Implement in-memory state and `localStorage` I/O": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077197
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782095988
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782132115
+      }
+    ],
+    "5.1 Implement `Renderer.renderList(transactions)`, `Renderer.renderEmptyState()`, and delete control markup": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077334
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782281466
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782314854
+      }
+    ],
+    "7. Checkpoint — Verify full happy path end-to-end": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077506
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782334149
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782437244
+      }
+    ],
+    "8.1 Style global layout, balance display, and error banner": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077672
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782442190
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782879232
+      }
+    ],
+    "8.2 Style the input form, validation errors, and transaction list": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077814
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782443043
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782879770
+      }
+    ],
+    "8.3 Style the chart area and empty-state placeholders": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782077958
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782443623
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782880432
+      }
+    ],
+    "9. Final checkpoint — Full integration and cross-browser validation": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782078108
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782885580
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789783413474
+      }
+    ],
+    "1. Scaffold project files and static HTML structure": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782091736
+      }
+    ],
+    "2. Implement Validator module and property-based tests": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782153932
+      }
+    ],
+    "3.2 Implement `Store.getTotalBalance()` and `Store.getCategoryTotals()`": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782158002
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782185725
+      }
+    ],
+    "3. Implement Store module": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782185872
+      }
+    ],
+    "4. Checkpoint — Validate pure logic before touching the DOM": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782203277
+      },
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782263564
+      }
+    ],
+    "5. Implement Renderer module": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782316327
+      }
+    ],
+    "8. Apply CSS layout and visual styling": [
+      {
+        "executionId": "e776ace5-bf02-4bc7-8daa-b249ba76b5ed",
+        "chatSessionId": "sess_4a1b94fe-4cd9-4d3c-8907-7ff6d6771b14",
+        "timestamp": 1789782880580
+      }
+    ]
+  }
+}
